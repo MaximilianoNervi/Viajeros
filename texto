@@ -1,0 +1,40 @@
+Ejercicio 2: Viajeros
+
+Modelar un conjunto de personas, y para cada persona, los viajes que hizo. Para cada
+viaje, nos interesa el país donde fue, y el año.
+
+Hay que poder responder:
+
+En qué países estuvo una persona en un determinado año.
+ 
+ Son: los países de los viajes que hizo la persona,
+  				más los países en donde residió en ese año.
+P.ej. pepe.enQuePaisesEstuvo(2014).
+
+Dada una persona, si coincidió con otra en un determinado año, o sea, si hay al
+menos un país en el que los dos estuvieron en ese año.
+P.ej. pepe.coincidioCon(ana,2014).
+
+Los países donde residió una persona dependen de qué tipo de persona es. Considerar
+estos tipos de personas:
+
+Establecido:
+	se sabe en qué país vive, en cualquier año que se pregunte, residió en
+ese país y en ningún otro.
+
+Migrante:
+	se sabe en qué país nació, a qué país se mudó, y en qué año. Hasta el año
+antes de mudarse, residió en el país en el que nació. Después de mudarse, residió
+en el país al que se mudó. El año en que se mudó residió en los dos.
+
+Doctor :
+	se sabe en qué país vive, en qué país hizo el doctorado, y entre qué años.
+P.ej. si Juan, que vive en Brasil, hizo el doctorado en Colombia entre 2008 y 2011,
+entonces residió en Colombia esos 4 años, y en Brasil hasta 2008 inclusive, y a
+partir de 2011 (para 2009 y 2010, residió todo el año en Colombia).
+
+Menor :
+	se sabe quién es la madre. Reside, en cualquier año, en los mismos paises
+que la madre. OJO los viajes del menor son separados, si viajaron juntos, hay
+que cargar el viaje en los dos, solamente se considera que coinciden los países de
+residencia.

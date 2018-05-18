@@ -1,0 +1,15 @@
+import viajeros.*
+
+/*test "pruebas REPL" {
+	
+	const pepe = new Viajero()
+	const algo = new Viajero()
+	pepe.viajar("brasil",2014)
+	algo.viajar("brasil",2014)
+	pepe.viajar("chile",2014)
+	algo.viajar("brasil",2015)
+	pepe.enQuePaisesEstuvoEnEl(2014)
+	pepe.coincidioCon(algo,2014)
+	
+}*/
+
